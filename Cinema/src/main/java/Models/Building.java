@@ -1,12 +1,15 @@
 package Models;
 
 import java.util.Collection;
+import java.util.Date;
 
 //Pervin
 public class Building {
     private String name;
     private final Address address;
     private final double space;
+    private Date openTime;
+    private Date closeTime;
     private ContactInfo contactInfo;
     private Collection<Session> sessions;
 

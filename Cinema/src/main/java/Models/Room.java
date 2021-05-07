@@ -2,6 +2,13 @@ package Models;
 
 import java.util.Collection;
 
+enum RoomType {
+    STANDARD,
+    VIP,
+    PREMIUM,
+    SUPER
+}
+
 public class Room {
     private int id;
     private String name;

@@ -3,6 +3,12 @@ package Models;
 import java.util.Collection;
 import java.util.Date;
 
+enum MovieType {
+    _3D,
+    _2D,
+    _4D
+}
+
 //Igbal
 public class Movie {
     private int id;

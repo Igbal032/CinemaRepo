@@ -12,6 +12,7 @@ enum SessionType {
 public class Session {
     private int id;
     private SessionType type;
+    private Collection<Movie> movies;
     private Date startTime;
     private Date endTime;
     private double priceIndex;

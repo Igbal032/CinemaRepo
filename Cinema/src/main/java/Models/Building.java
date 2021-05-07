@@ -8,8 +8,10 @@ public class Building {
     private String name;
     private final Address address;
     private final double space;
+    private double income;
     private Date openTime;
     private Date closeTime;
+    private Collection<Employee> employees;
     private ContactInfo contactInfo;
     private Collection<Session> sessions;
 

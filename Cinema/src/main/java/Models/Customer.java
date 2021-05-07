@@ -3,16 +3,30 @@ package Models;
 //Valeh
 
 
+import java.util.Collection;
+
 public class Customer {
     private int id;
     private String name;
+    private String surName;
     private String gender;
-    private int ticket;
-    private int seatNumber;
-    private String products;
-
-    private double hasPaid;
+    private ContactInfo contactInfo;
+    private Collection<Ticket> tickets;
+    private Collection<Product> products;
+    private double serviceAmount;
     private boolean isRegular;
+
+    public Customer(int id, String name, String surName, String gender, ContactInfo contactInfo, Collection<Ticket> tickets, Collection<Product> products, double serviceAmount, boolean isRegular) {
+        this.id = id;
+        this.name = name;
+        this.surName = surName;
+        this.gender = gender;
+        this.contactInfo = contactInfo;
+        this.tickets = tickets;
+        this.products = products;
+        this.serviceAmount = serviceAmount;
+        this.isRegular = isRegular;
+    }
 
     public int getId() {
         return id;
@@ -30,8 +44,12 @@ public class Customer {
         this.name = name;
     }
 
-    public int getTicket() {
-        return ticket;
+    public String getSurName() {
+        return surName;
+    }
+
+    public void setSurName(String surName) {
+        this.surName = surName;
     }
 
     public String getGender() {
@@ -42,52 +60,43 @@ public class Customer {
         this.gender = gender;
     }
 
-    public void setTicket(int ticket) {
-        this.ticket = ticket;
+    public ContactInfo getContactInfo() {
+        return contactInfo;
     }
 
-    public int getSeatNumber() {
-        return seatNumber;
+    public void setContactInfo(ContactInfo contactInfo) {
+        this.contactInfo = contactInfo;
     }
 
-    public void setSeatNumber(int seatNumber) {
-        this.seatNumber = seatNumber;
+    public Collection<Ticket> getTickets() {
+        return tickets;
     }
 
-    public String getProducts() {
+    public void setTickets(Collection<Ticket> tickets) {
+        this.tickets = tickets;
+    }
+
+    public Collection<Product> getProducts() {
         return products;
     }
 
-    public void setProducts(String products) {
+    public void setProducts(Collection<Product> products) {
         this.products = products;
     }
 
-    public double getHasPaid() {
-        return hasPaid;
+    public double getServiceAmount() {
+        return serviceAmount;
     }
 
-    public void setHasPaid(double hasPaid) {
-        this.hasPaid = hasPaid;
+    public void setServiceAmount(double serviceAmount) {
+        this.serviceAmount = serviceAmount;
     }
 
     public boolean isRegular() {
         return isRegular;
     }
 
-    public Customer(int id, String name, String gender, int ticket, int seatNumber, String products, double hasPaid, boolean isRegular) {
-        this.id = id;
-        this.name = name;
-        this.gender = gender;
-        this.ticket = ticket;
-        this.seatNumber = seatNumber;
-        this.products = products;
-        this.hasPaid = hasPaid;
-        this.isRegular = isRegular;
-    }
-
     public void setRegular(boolean regular) {
         isRegular = regular;
     }
-
-
 }

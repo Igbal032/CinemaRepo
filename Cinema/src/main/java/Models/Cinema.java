@@ -7,6 +7,4 @@ public class Cinema {
     private String name;
     private ArrayList<Building> buildings;
     private ArrayList<Employee> employees;
-
-
 }

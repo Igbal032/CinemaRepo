@@ -2,9 +2,27 @@ package Models;
 //Valeh
 
 public class Seat {
+    private int seatNumber;
     private int column;
     private int row;
     private boolean isFree;
+    private boolean isForCouples;
+
+    public Seat(int seatNumber, int column, int row, boolean isFree, boolean isForCouples) {
+        this.seatNumber = seatNumber;
+        this.column = column;
+        this.row = row;
+        this.isFree = isFree;
+        this.isForCouples = isForCouples;
+    }
+
+    public int getSeatNumber() {
+        return seatNumber;
+    }
+
+    public void setSeatNumber(int seatNumber) {
+        this.seatNumber = seatNumber;
+    }
 
     public int getColumn() {
         return column;
@@ -30,9 +48,11 @@ public class Seat {
         isFree = free;
     }
 
-    public Seat(int column, int row, boolean isFree) {
-        this.column = column;
-        this.row = row;
-        this.isFree = isFree;
+    public boolean isForCouples() {
+        return isForCouples;
+    }
+
+    public void setForCouples(boolean forCouples) {
+        isForCouples = forCouples;
     }
 }

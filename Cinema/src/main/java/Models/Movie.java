@@ -7,10 +7,15 @@ import java.util.Date;
 public class Movie {
     private int id;
     private String movieName;
-    private Collection<Categoty> categoties;
-    private long duration;
+    private Collection<Categoty> categories;
+    private long durationMinutes;
     private Language language;
-    private Date publishDate;
+    private Date releaseDate;
+    private Date endDate;
+    private Author author;
+    private Collection<Actor> actors;
+    private Collection<Prize> prizes;
     private Collection<MovieType> movieType;
-
+    private double rating;
+    private Trailer trailer;
 }

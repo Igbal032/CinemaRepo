@@ -4,5 +4,6 @@ package Models;
 public enum Language {
     AZ,
     EN,
-    RUS
+    RUS,
+    TR
 }

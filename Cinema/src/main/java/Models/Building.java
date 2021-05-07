@@ -1,5 +1,4 @@
-package org.example;
-
+package Models;
 
 //Pervin
 public class Building {

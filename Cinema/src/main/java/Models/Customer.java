@@ -1,4 +1,7 @@
+package Models;
+
 //Valeh
+
 
 public class Customer {
     private int id;
